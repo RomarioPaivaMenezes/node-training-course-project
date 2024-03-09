@@ -1,0 +1,11 @@
+
+<h1>Movies</h1>
+<div class="movies-container">
+<a href="/">Add new movie</a>
+{{#each movies}}
+    <div>
+        #<span class="bold"><a href="/movies/{{this.id}}">{{this.title}}</a></span> - Genre: {{this.genre}} - Director: {{this.director}} - Release Year: {{this.release_year}}
+    </div>
+{{/each}}
+
+</div>

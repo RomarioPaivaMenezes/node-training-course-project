@@ -1,0 +1,21 @@
+<h1>Edit Movie</h1>
+<form action="/movies/updatemovie" method="post" class="form">
+    <input type="hidden" name="id" value="{{movie.id}}">
+    <div class="form-control">
+        <label for="title"> Title:</label>
+        <input type="text" name="title" placeholder="Type a Title" value="{{movie.title}}">
+    </div>
+    <div class="form-control">
+        <label for="genre"> Genre:</label>
+        <input type="text" name="genre" placeholder="Type a Genre" value="{{movie.genre}}">
+    </div>
+    <div class="form-control">
+        <label for="director"> Director:</label>
+        <input type="text" name="director" placeholder="Type the Director Name" value="{{movie.director}}">
+    </div>
+    <div class="form-control">
+        <label for="releasedt"> Release Date:</label>
+        <input type="number" name="releasedt" placeholder="Type the release date" value="{{movie.release_year}}"> 
+    </div>
+    <input type="submit" value="Edit">
+</form>

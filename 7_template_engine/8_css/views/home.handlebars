@@ -1,0 +1,16 @@
+<h1>Hello World Home</h1>
+
+{{#if approved}}
+    <p>Congratulations, Your registration has been approved!</p>
+{{else}}
+    <p>Your registration needs to be approved!</p>
+{{/if}}
+
+    <p>The user name is : {{user.name}} {{user.surname}}</p>
+
+{{#if auth}}
+    <p>User Authenticated, 
+        <a href="/dashboard"> go to member area</a>
+    </p>
+
+{{/if}}
